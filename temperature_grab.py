@@ -35,5 +35,4 @@ def grab_sensors_temp():
         device_file = device + '/w1_slave'
         serial_nb = device.split('/')[5]
         sensor_dict[serial_nb] = read_temp(device_file)
-        #print(sensor_dict)
     return sensor_dict
